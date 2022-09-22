@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>My YouTube Resource Gallery</title>
+    <link rel="stylesheet" href="app.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+
+            <div>    
+                <h1 class="headline">My YouTube Resource Gallery</h1>
+                <p>The perfect app to keep track of valuable resources while learning to code. As you come across a helpful video, add the id here.</p>
+            </div>
+            <form >
+                    <label for="videoId">Video Id</label>
+                    <input type="text" name="videoId" id="videoId" placeholder="HSN345J9J">
+                <button onclick="saveVideo(event)">Save the Video</button>
+            </form>
+        </div>
+        <ul id="videosContainer">
+
+        </div>
+    </div>
+    <div id="popup"  onclick="handlePopupClick()" class="closed">
+            <iframe
+              width="560" height="315" 
+              frame-border="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              ></iframe>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
+        
